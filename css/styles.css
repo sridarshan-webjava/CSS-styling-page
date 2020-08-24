@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  background-color:hsl(204, 43%, 93%);
+  font-family:'Karla',sans-serif;
+}
+
+h1{
+  font-size:1.3rem;
+}
+
+h2{
+  font-size:1.1rem;
+}
+
+p{
+  font-size:1.05rem;
+}
+
+li{
+  list-style:none;
+  font-weight:400;
+  font-size:1rem;
+}
+
+.box{
+  width:85%;
+  margin:0 auto;
+  /* box-shadow:5px 10px 18px #888888; */
+}
+
+.container{
+  width:95%;
+  margin:0 auto;
+}
+
+.column{
+  padding:20px 0;
+}
+
+.column_one_wrapper{
+  background-color:#fff;
+  padding:25px;
+  border-radius:7px 7px 0 0;
+}
+
+.column_one_wrapper h1{
+  color:#3bb4c1;
+  margin-bottom:0.9em;
+}
+
+.column_one_wrapper h2{
+  color:hsl(71, 73%, 54%);
+  margin-bottom:1em;
+}
+
+.column_one_wrapper p{
+  color:#6e828a;
+  font-weight:400;
+  line-height:1.65;
+}
+
+.column_two_sub_one_wrapper{
+  background-color:#00adb5;
+  padding:25px;
+}
+
+.column_two_sub_one_wrapper h1{
+  color:#ebfffa;
+  margin-bottom:25px;
+}
+
+.column_two_sub_one_wrapper span{
+  display:inline-block;
+  font-size:2.5rem;
+  font-weight:700;
+  color:#ebfffa;
+  vertical-align: middle;
+  margin-right:15px;
+}
+
+.column_two_sub_one_wrapper h2{
+  font-weight:400;
+  color:#71c9ce;
+  margin-bottom:8px;
+}
+
+.column_two_sub_one_wrapper p{
+  color:#cbf1f5;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  font-size:1rem;
+  background-color:hsl(71, 73%, 54%);
+  color:#cbf1f5;
+  padding:0.8em 6em;
+  border-radius:5px;
+  margin-bottom:8px;
+  white-space: nowrap;
+}
+
+.column_two_sub_two_wrapper{
+  background-color:hsl(179, 62%, 43%);
+  padding:25px;
+  border-radius:0 0 7px 7px;
+}
+
+.column_two_sub_two_wrapper h1{
+  color:#ebfffa;
+  margin-bottom:22px;
+}
+
+.column_two_sub_two_wrapper li{
+  color:#cbf1f5;
+  margin-bottom:5px;
+}
+
+@media(min-width:660px){
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .column{
+    max-width:800px;
+    padding:0;
+    box-shadow:5px 10px 18px #888888;
+  }
+
+  .column_two{
+    display:flex;
+  }
+
+  .column_two_sub_one_wrapper,
+  .column_two_sub_two_wrapper{
+    width:100%;
+  }
+
+  .column_two_sub_one_wrapper{
+    border-radius:0 0 0 7px;
+  }
+
+  .btn{
+    font-size:1.05rem;
+    margin-bottom:10px;
+  }
+
+  .column_two_sub_two_wrapper{
+    border-radius:0 0 7px 0;
+  }
+
+  .column_two_sub_two_wrapper li{
+    margin-bottom:2px;
+  }
+}
